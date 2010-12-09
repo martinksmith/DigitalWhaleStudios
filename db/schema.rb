@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101129045345) do
+ActiveRecord::Schema.define(:version => 20101207032124) do
+
+  create_table "farts", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.boolean  "unlocked?"
+    t.integer  "unlock_count"
+    t.integer  "hit_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

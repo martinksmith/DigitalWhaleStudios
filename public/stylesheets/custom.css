@@ -1,9 +1,15 @@
+.sheet {
+	width: 750px;
+	background: #FFC97D;
+	border: 1px solid #AB6400;
+}
+
 .container {
   width: 710px;
 }
 
 body {
-  background: #E29836;
+  background: #E88E10;
 }
 
 header {
@@ -11,15 +17,18 @@ header {
 }
 
 header img {
-  padding: 1em;
-  background: #fff;
+  left-padding: 1em;
+  top-padding: 1em;
+  right-padding: 1em;
+  bottom-padding: 0em;
 }
 
 section {
-  margin-top: 1em;
+  margin-top: 0.2em;
+  margin: 20px;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+  background: #ffffff;
 }
 
 section h1 {
@@ -52,6 +61,7 @@ nav {
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
+  margin: 20px;
 }
 
 nav ul {
@@ -86,11 +96,18 @@ a.signup_button {
   display: block;
   text-align: center;
   width: 190px;
-  color: #fff;
+  color: #ffffff;
   background: #A4A826;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
+  border: 2px solid #787A1F
+}
+
+/* Sign in */
+
+.signin_quip {
+	width: 210px;
 }
 
 /* Round corners */
@@ -131,12 +148,56 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
-  border: 1px solid #fc3;
+  background: #ffffcc;
+  border: 1px solid #ffcc33;
 }
 
 .profile img.gravatar {
-  border: 1px solid #999;
+  border: 1px solid #999999;
   margin-bottom: -15px;
 }
 
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
